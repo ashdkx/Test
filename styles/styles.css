@@ -61,23 +61,32 @@ body {
     }
 }
 
-.body_text {
-    min-width: 100vw;
-    min-height: 100vh;
-}
-
-.body_text {
+.body_text_history {
     position: relative;
-    /*display: flex;*/
-    /*align-items: center;*/
-    /*justify-content: center;*/
-    /*text-align: center;*/
+    min-width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+    grid-gap: 0;
+    padding: 0;
+    margin: 0;
+    /*height: 257vh;*/
 }
 
 #card_back {
-    position: absolute;
+    /*position: absolute;*/
     min-width: 100vw;
+    /*object-fit: cover;*/
+    gap: 0;
     z-index: 0;
+    padding: 0;
+    margin: 0;
+}
+
+#image_box {
+    grid-column: 1/ span 20;
+    grid-row: 1/span 20;
+
 }
 
 #history {
@@ -85,19 +94,26 @@ body {
     margin-top: 5vw;
     margin-left: 5vw;
     margin-right: 5vw;
+    grid-column: 1/ span 6;
     /*background: black;*/
     color: white;
     z-index: 1;
     font-size: 25pt;
 }
 
+#text_box {
+    grid-column: 1/ span 20;
+    grid-row: 1/span 20;
+}
+
+
 .option_nav {
     display: grid;
-    grid-template-columns: repeat(4, 1fr) ;
+    grid-template-columns: repeat(4, 1fr);
     background: black;
 }
 
-h1  {
+h1 {
     color: white;
     border: 5px solid white;
     padding-top: 30vh;
@@ -115,8 +131,10 @@ h1  {
 
 h1:hover {
     font-size: 5vh;
-    padding-top: 28.75vh;
-    padding-bottom: 28.85vh;
+    padding-top: 28vh;
+    padding-bottom: 28vh;
+    margin-left: 6vw;
+    margin-right: 6vw;
 }
 
 #history_nav_puzzle {
@@ -141,6 +159,42 @@ a {
 
 }
 
+#section_break_1 {
+    width: 100vw;
+    height: 5vh;
+    background-image:
+            linear-gradient(to top, transparent, #1e3b70),
+            linear-gradient(to right, black, black, black);
+    background-size: 100% 100%, 2000% 100%;
+}
+
+#section_break_2 {
+    width: 100vw;
+    height: 3vh;
+    background-image:
+            linear-gradient(to top, transparent, black),
+            linear-gradient(to right, #daaa72, #ce8444, #af8457);
+    background-size: 2000% 100%, 100% 100%;
+}
+
+#section_break_3 {
+    width: 100vw;
+    height: 3vh;
+    padding: 0;
+    margin: 0;
+    background-image:
+            linear-gradient(to top, transparent, #daaa72),
+            linear-gradient(to right, black, black, black);
+    background-size: 2000% 100%, 100% 100%;
+}
+
+
+footer {
+    background-color: black;
+    color: white;
+    line-height: 50px;
+    text-align: right;
+}
 
 @media screen and (min-width: 1280px) {
     #blue_eyes {
