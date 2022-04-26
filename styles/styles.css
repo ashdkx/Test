@@ -1,3 +1,10 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
 .title {
     height: 100vh;
     max-width: 100%;
@@ -46,14 +53,89 @@
 }
 
 @keyframes logo {
-    0% { opacity: 0;}
-    100% {opacity: 1;}
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .body_text {
     min-width: 100vw;
     min-height: 100vh;
 }
+
+.body_text {
+    position: relative;
+    /*display: flex;*/
+    /*align-items: center;*/
+    /*justify-content: center;*/
+    /*text-align: center;*/
+}
+
+#card_back {
+    position: absolute;
+    min-width: 100vw;
+    z-index: 0;
+}
+
+#history {
+    position: relative;
+    margin-top: 5vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    /*background: black;*/
+    color: white;
+    z-index: 1;
+    font-size: 25pt;
+}
+
+.option_nav {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) ;
+    background: black;
+}
+
+h1  {
+    color: white;
+    border: 5px solid white;
+    padding-top: 30vh;
+    padding-bottom: 30vh;
+    text-align: center;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    font-size: 4vh;
+}
+
+#history_nav {
+    grid-column: 1/span 2;
+    z-index: 1;
+}
+
+h1:hover {
+    font-size: 5vh;
+    padding-top: 29.5vh;
+    padding-bottom: 29.5vh;
+}
+
+#history_nav_puzzle {
+    z-index: 0;
+    position: absolute;
+    grid-column: 1/span 2;
+    padding-top: 10vh;
+    padding-bottom: 30vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    max-width: 50vw;
+    max-height: 70vh;
+}
+
+#gameplay_nav {
+    grid-column: 3/span 2;
+
+}
+
 
 @media screen and (min-width: 1280px) {
     #blue_eyes {
