@@ -30,7 +30,7 @@ body {
 
 #blue_eyes {
     z-index: 1;
-    max-width: 102vw;
+    max-width: 100vw;
     min-height: 102vh;
     position: absolute;
     top: 50%;
