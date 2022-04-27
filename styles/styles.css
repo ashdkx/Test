@@ -64,7 +64,7 @@ body {
     }
 }
 
-.body_text_history {
+#body_text_history {
     position: relative;
     min-width: 100vw;
     display: grid;
@@ -94,7 +94,7 @@ body {
 
 }
 
-#history {
+.history {
     position: relative;
     margin-top: 5vw;
     margin-left: 5vw;
@@ -119,7 +119,7 @@ body {
     width: 100vw;
 }
 
-h1 {
+.main_nav {
     color: white;
     border: 5px solid white;
     padding-top: 30vh;
@@ -135,7 +135,7 @@ h1 {
     z-index: 1;
 }
 
-h1:hover {
+.main_nav:hover {
     font-size: 5vh;
     padding-top: 28vh;
     padding-bottom: 28vh;
@@ -189,11 +189,31 @@ a {
     padding: 0;
     margin: 0;
     background-image:
-            linear-gradient(to top, transparent, #daaa72),
-            linear-gradient(to right, black, black);
+            linear-gradient(to bottom, transparent, black),
+            linear-gradient(to right, #e4ad76, #dc9754, #e4ad76);
     background-size: 2000% 100%, 100% 100%;
 }
 
+#game_layout {
+    display: grid;
+    background: black;
+    color: white;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#field_container {
+    grid-column: 1/ span 2;
+}
+
+#field {
+    max-width: 50vw;
+}
+
+#game_rules_text {
+    padding-left: 2vw;
+    grid-column: 3/ span 2;
+
+}
 
 footer {
     background-color: black;
@@ -205,17 +225,5 @@ footer {
 }
 
 @media screen and (min-width: 1280px) {
-    #blue_eyes {
-        z-index: 1;
-        min-width: 100vw;
-        max-height: 100vh;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        /*right: 50%;*/
-        margin-left: fill;
-        margin-right: fill;
-        transform: translate(-50%, -50%);
-        object-fit: cover;
-    }
+
 }
