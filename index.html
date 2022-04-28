@@ -2,10 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Ash Nguyen</title>
+    <title>Ash_Nguyen_Project2</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/title_icon.png" type="image/x-icon">
 </head>
 <body>
+<!-- Intro video -->
 <div class="title">
     <div class="content">
         <img src="assets/yugioh.png" alt="yugioh logo" id="logo">
@@ -15,20 +18,18 @@
             <source src="assets/blue_eyes.mp4" type="video/mp4">
         </video>
     </div>
-    
+
 </div>
 
+<!-- Navigation to different sections-->
 <div id="section_break_1"></div>
 
 <div class="option_nav">
-    <!--    <div >-->
     <h1 id="history_nav" class="main_nav"><a href="#body_text_history"> History </a></h1>
-    <!--    </div>-->
-    <!--    <div >-->
     <h1 id="gameplay_nav" class="main_nav"><a href="#body_text_gameplay"> Gameplay </a></h1>
-    <!--    </div>-->
 </div>
 
+<!-- History of the franchise -->
 <div id="section_break_2"></div>
 
 <div id="body_text_history">
@@ -38,31 +39,25 @@
     <div id="text_box">
         <h2 class="history"> History </h2>
         <p class="history">
-            &emsp; &emsp; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non consequat urna. Maecenas
-            congue
-            purus eu sapien
-            molestie malesuada. Phasellus sodales dictum vehicula. Sed facilisis nibh a ipsum maximus, vel lobortis nunc
-            vulputate. Donec euismod sem tincidunt libero porta tempor. Aenean at dapibus felis. Suspendisse elit diam,
-            facilisis a euismod sed, suscipit et justo. Maecenas eu tortor semper, mollis lacus sed, interdum dolor.
-            Nunc at
-            ipsum nec eros consectetur maximus. Nulla eget varius felis, at elementum nisl. Nulla at maximus sem.
-            Vestibulum
-            hendrerit quam sed mauris feugiat, id ullamcorper dui suscipit. Nullam sapien ex, vestibulum at arcu vitae,
-            commodo viverra odio.
-
-            Sed nec luctus metus, a malesuada felis. Pellentesque lectus velit, faucibus eu mauris in, laoreet
-            consectetur
-            neque. Sed tincidunt nunc ac venenatis mattis. Vivamus vel porttitor est. Donec laoreet iaculis lorem, id
-            tempus
-            justo tristique vitae. In blandit dui justo, non condimentum tortor lobortis quis. Sed at quam eleifend odio
-            molestie elementum. Sed gravida tempus leo. Aenean consectetur blandit auctor. Donec consectetur nibh sit
-            amet
-            pharetra egestas.
+            &emsp; &emsp; The Yu-gi-oh franchise started out as a manga in 1996. It tells the adventure of Yugi Mutou
+            who solved the ancient Millennium Puzzle, which lends him the spirit of a nameless Pharaoh. From then,
+            whenever Yugi or his friends encounter dangers, the spirit challenges the opposition to a Shadow Game that
+            reveals one's heart. As the story progresses, Yugi and his friends venture through dangers to help the
+            Pharaoh regains his memory and his true name.
+            <br> <br>
+            &emsp; &emsp; Yu-gi-oh card game have been around since 1999 in Japan and 2002 in North America. The game
+            features thousands of cards, several archetypes, and an endless number of combo combinations. It involves 2
+            players, each has a main deck (40-60 cards) and an extra deck (max 15 cards). Each side of the field has 5
+            monster slots and 5 trap/spell slots, a field spell slot, a graveyard slot and 2 shared extra deck slots.
+            The game has 2 different rulings: Trading Card Game (TCG) and Original Card Game (OCG), with TCG referring
+            to North America and OCG referring to Japan. Having different rulings and regulations, the dynamics of each
+            focuses on different aspects of the game.
         </p>
     </div>
-    
+
 </div>
 
+<!-- Gameplay -->
 <div id="section_break_3"></div>
 
 <div id="body_text_gameplay">
@@ -73,26 +68,133 @@
         <div id="game_rules_text">
             <h2> Gameplay </h2>
             <ul>
-                <li>lorem ipsum</li>
-                <li>lorem ipsum</li>
-                <li>lorem ipsum</li>
-                <li>lorem ipsum</li>
-                <li>lorem ipsum</li>
-                <li>lorem ipsum</li>
+                <li>The game begins by a round of rock, paper, scissor, or a coin flip to decide who goes first.</li>
+                <li>The board is set up as shown. Each player begins with 8000 Life Points, and alternate
+                    turns each. The game usually ends when a player's Life Points reaches 0.
+                </li>
+                <li>Each turn consists of 6 phases: Draw Phase, Standby Phase, Main Phase 1, Battle Phase, Main Phase 2,
+                    and End Phase
+                </li>
+                <li>The board consists of 5 slots for monster cards, 2 slots for link monsters, 5 slots for trap/spell
+                    cards, 1 slot for main deck, 1 slot for extra deck, 1 slot for graveyard (containing defeated
+                    monsters) 1 slot for banished cards, and 1 slot for field spell.
+                </li>
+                <li>There are 3 main types of cards in the game: monster, trap, and spell. <a href="#card_slideshow">
+                    (browse below) </a></li>
             </ul>
         </div>
     </div>
 
-    <div>
+    <div id="card_slideshow">
+        <div class="card_slide_container">
+            <div class="card_slide fade">
+                <div class="card_container">
+                    <img src="assets/monster_card.png" alt="slifer yugioh card" class="card">
+                </div>
+                <p class="card_text">
+                    <b> Monster Card </b>
+                    <br> <br>
+                    &emsp; &emsp; Monster card is the main damage dealer in the game. There are several types of monster
+                    cards (regular cards, XYZ cards, Link cards, Synchro cards, etc). Each card has a name at the top,
+                    an element on the right of it, a level (amount of stars) below, an artwork, and types, effects,
+                    attack, defense below. When played, a monster card can be in either attack (placed vertical) or
+                    defense (placed horizontally) position. When first plays, if the card is in attack position, it must
+                    be facing up, and if in defense position then facing down. When destroyed, it will be moved to
+                    graveyard.</p>
+            </div>
+        </div>
 
+        <div class="card_slide_container">
+            <div class="card_slide fade">
+                <div class="card_container">
+                    <img src="assets/spell_card.png" alt="book of moon yugioh card" class="card">
+                </div>
+                <p class="card_text">
+                    <b> Spell Card </b>
+                    <br> <br>
+                    &emsp; &emsp; Spell card has a similar layout to monster card, except it does not have level but the
+                    text [Spell Card] instead, and does not have attack or defense stats. Spell card can be played
+                    immediately from hand or set on the field on the back row of the monster slots. If the card is a
+                    field spell, however, it will be placed on the field spell zone. Each player can have only 1 field
+                    spell on the board. In addition, spell card is colored in teal. When destroyed, it will be moved to
+                    graveyard.</p>
+            </div>
+        </div>
+        <div class="card_slide_container">
+
+            <div class="card_slide fade">
+                <div class="card_container">
+                    <img src="assets/trap_card.png" alt="mirror force yugioh card" class="card">
+                </div>
+                <p class="card_text">
+                    <b> Trap Card </b>
+                    <br> <br>
+                    &emsp; &emsp; Trap card is similar to spell card, it does not have level but the text [Trap Card]
+                    instead and does not have attack or defense stats either. Trap card cannot be played directly
+                    (unless specified on the card, these are called hand trap), it must be set in the trap/spell slots
+                    first. Trap card is colored in magenta. When destroyed, it will be moved to graveyard. </p>
+            </div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
     </div>
 
-    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non consequat urna. Maecenas congue
-        purus eu sapien
-        molestie malesuada. Phasellus sodales dictum vehicula. Sed facilisis nibh a ipsum maximus, vel lobortis nunc
-        vulputate. Donec euismod sem tincidunt libero porta tempor. Aenean at dapibus felis. Suspendisse elit diam,
-        facilisis a euismod
-    </p>
+    <div style="background: black; padding: 2%; margin: 0">
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+
+    <!--  Script for slideshow  -->
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("card_slide_container");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+
+    <div>
+        <h3 style="background-color: black;
+        padding: 1vw;
+        margin: 0;
+        color: white;
+        text-align: center">
+            In addition, the Yu-gi-oh! franchise has several video game titles, below are some more well-known PvP
+            titles. Let's dive in and let the duel begin!
+        </h3>
+        <div style="background-color: black">
+            <img src="assets/yugioh_games.jpeg" alt="yugioh game titles" style="width: 100vw; padding: 0; margin: 0;">
+        </div>
+    </div>
+
 </div>
 
 </body>
